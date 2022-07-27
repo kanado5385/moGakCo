@@ -1,3 +1,9 @@
+.profileContainer {
+    background-color: blueviolet;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
 .profilePicture {
     margin-top: 50px;
     margin-left: 50px;
@@ -13,7 +19,7 @@ input {
 #nameBox {
     margin-top: 10px;
     margin-left: 50px;
-    width: 400px;
+    width: 300px;
     background-color: yellow;
     padding: 4px 8px;
     font-size: 25px;
@@ -26,7 +32,7 @@ input {
 #emailBox {
     margin-top: 10px;
     margin-left: 50px;
-    width: 400px;
+    width: 300px;
     background-color: orange;
     padding: 4px 8px;
     font-size: 25px;
@@ -35,7 +41,7 @@ input {
 #gitBox {
     margin-top: 10px;
     margin-left: 50px;
-    width: 400px;
+    width: 300px;
     background-color: blue;
     padding: 4px 8px;
     font-size: 25px;
@@ -48,3 +54,20 @@ input {
     background-color: red;
 }
 
+.personalIntro {
+    width: 800px;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 50px;
+}
+
+.enterIntro {
+    width: 750px;
+    height: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.introSpan {
+    margin-left: 20px;
+}

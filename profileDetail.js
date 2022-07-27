@@ -36,3 +36,23 @@ function addGit() {
     document.getElementById('enteredGit').innerText = gitPar;
     gitInput.style.display = "none";
 }
+
+let getIntroInput = document.getElementsByClassName("enterIntro");
+getIntroInput.addEventListener("keyup", function(event) {
+    if(event.keyCode === 13) {
+        addIntro();
+    }
+})
+
+function addIntro() {
+    let introCnt = 1;
+    let newIntroSpan = document.createElement('span');
+    newIntroSpan.setAttribute("class", "introSpan");
+    newIntroSpan.setAttribute("id", "enterIntro" + introCnt);
+    introCnt += 1;
+
+    let newIntroText = document.getElementById("enterIntro" + introCnt);
+    let introTextToAdd = newIntroText.value;
+    newIntroSpan.innerText = introTextToAdd;
+    introTextToAdd.style.display = "none";
+}
