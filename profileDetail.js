@@ -37,18 +37,21 @@ function addGit() {
     gitInput.style.display = "none";
 }
 
-let getIntro = document.querySelector(".setIntro");
-getIntro.addEventListener("keyup", function(event) {
-    if(event.keyCode === 13) {
-        addIntro();
-    }
+
+let introDiv = document.getElementsByClassName("personalIntro")[0];
+let getInputNode = document.querySelectorAll(".setIntro");
+
+getInputNode.forEach(element => {
+    element.addEventListener("keyup", function(event) {
+        if(event.keyCode === 13) {
+            addIntro();
+        }
+    })
 })
 
 function addIntro() {
-    let introDiv = document.querySelector('.personalIntro');
-    let addTxt = "<span><input class='setIntro'></span>"
+    let newInput = document.createElement("input");
+    newInput.setAttribute("class", "setIntro");
 
-    let newSpan = document.createElement("span");
-    newSpan.innerHTML = addTxt;
-    introDiv.appendChild(newSpan);
+    introDiv.appendChild(newInput);
 }
