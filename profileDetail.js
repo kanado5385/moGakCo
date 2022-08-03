@@ -39,17 +39,26 @@ function addGit() {
 
 
 let introDiv = document.getElementsByClassName("personalIntro")[0];
-let getInputNode = document.querySelectorAll(".setIntro");
-
-getInputNode.forEach(element => {
-    element.addEventListener("keyup", function(event) {
-        if(event.keyCode === 13) {
-            addIntro();
-        }
-    })
+let firstInputTag = document.getElementById("firstInput");
+firstInputTag.addEventListener("keyup", function(event) {
+    if(event.keyCode === 13) {
+        getNodeLen();
+    }
 })
 
-function addIntro() {
+function getNodeLen() {
+    let getNode = document.querySelectorAll(".setIntro");
+    for(let i=0; i<getNode.length; i++) {
+        getNode[i].addEventListener("keyup", function(event) {
+            if(event.keyCode === 13) {
+                addInput();
+            }
+            getNode[i].removeEventListener();
+        });
+    }
+}
+
+function addInput() {
     let newInput = document.createElement("input");
     newInput.setAttribute("class", "setIntro");
 
