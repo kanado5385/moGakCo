@@ -1,0 +1,112 @@
+{
+    "people": [
+    { 
+    "nikname": "Kanado",
+    "gender": "남",
+    "age": "23",
+    "residence": "대구",
+    "technic1": "c++",
+    "technic2": "python",
+    "technic3": "android",
+    "career": "무",
+    "Education": "대학교4년제",
+    "img": "../이미지/다운로드.png"
+    }, 
+    { 
+        "nikname": "Kanado1",
+        "gender": "여",
+        "age": "22",
+        "residence": "서울",
+        "technic1": "python",
+        "technic2": "java",
+        "technic3": "django",
+        "career": "무",
+        "Education": "대학교4년제",
+        "img": "../이미지/다운로드.png"
+        },   
+        { 
+    "nikname": "Kanado2",
+    "gender": "여",
+    "age": "45",
+    "residence": "부산",
+    "technic1": "android",
+    "technic2": "list",
+    "technic3": "fragmaent",
+    "career": "유",
+    "Education": "대학원",
+    "img": "../이미지/다운로드.png"
+    },
+    { 
+        "nikname": "Kanado3",
+        "gender": "남",
+        "age": "36",
+        "residence": "대전",
+        "technic1": "java",
+        "technic2": "c",
+        "technic3": "javascript",
+        "career": "유",
+        "Education": "고등학교",
+        "img": "../이미지/다운로드.png"
+        },
+        { 
+    "nikname": "Kanado4",
+    "gender": "남",
+    "age": "26",
+    "residence": "광주",
+    "technic1": " javascript",
+    "technic2": "list",
+    "technic3": "java",
+    "career": "유",
+    "Education": "대학원",
+    "img": "../이미지/다운로드.png"
+    }, 
+    { 
+        "nikname": "Kanado5",
+        "gender": "여",
+        "age": "25",
+        "residence": "인천",
+        "technic1": "html",
+        "technic2": "django",
+        "technic3": "javascript",
+        "career": "무",
+        "Education": "대학교4년제",
+        "img": "../이미지/다운로드.png"
+        },
+        { 
+        "nikname": "Kanado6",
+        "gender": "여",
+        "age": "25",
+        "residence": "인천",
+        "technic1": "html",
+        "technic2": "django",
+        "technic3": "javascript",
+        "career": "무",
+        "Education": "대학교4년제",
+        "img": "../이미지/다운로드.png"
+        },
+        { 
+        "nikname": "Kanado7",
+        "gender": "여",
+        "age": "29",
+        "residence": "전남",
+        "technic1": "list",
+        "technic2": "django",
+        "technic3": "python",
+        "career": "유",
+        "Education": "고등학교",
+        "img": "../이미지/다운로드.png"
+        },
+        { 
+        "nikname": "Kanado8",
+        "gender": "여",
+        "age": "48",
+        "residence": "인천",
+        "technic1": "html",
+        "technic2": "c",
+        "technic3": "javascript",
+        "career": "유",
+        "Education": "대학교4년제",
+        "img": "../이미지/다운로드.png"
+        }   
+    ]
+}
