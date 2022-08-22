@@ -1,10 +1,14 @@
-
+// json으로부터 정보 불러오는 함수
 function loadItems() {
     return fetch('data/data.json')
         .then(response => response.json())
         .then(json => json.people);
 }
 
+
+
+
+//모든 정보를 디스플레이 해주는 함수
 function displayItems(people){
     const container = document.querySelector('.people');
     container.innerHTML = people.map(person => createHTMLString(person)).join('');
@@ -27,9 +31,32 @@ function createHTMLString(person) {
     `;
 }
 
+// 조건 선택 검색 함수
+function search_cond(){
+    const gender1 = document.getElementsByName("gender");
+    const age = document.getElementsByName("age");
+    const residence = document.getElementsByName("residence");
+    const technic = document.getElementsByName("technic");
+    const career = document.getElementsByName("career");
+    const Education = document.getElementsByName("Education");
+    for(let i=0; i<gender1.length; i++) {
+        if(gender1[i].checked) {
+            const filtered = people1.filter(person => person['gender'] === gender1[i].value);
+            displayItems(filtered);
+        }
+        
+    }
+    
+    //displayItems(filtered);
+}
+
+// main 동작
+let people1 = [];
 loadItems()
     .then(people => {
         console.log(people);
         displayItems(people);
+        test = people;
 })
 .catch(console.log);
+
