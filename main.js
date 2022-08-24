@@ -34,11 +34,11 @@ function createHTMLString(person) {
 // 조건 선택 검색 함수
 function search_cond(){
     const gender1 = document.getElementsByName("gender");
-    const age = document.getElementsByName("age");
-    const residence = document.getElementsByName("residence");
-    const technic = document.getElementsByName("technic");
-    const career = document.getElementsByName("career");
-    const Education = document.getElementsByName("Education");
+    const age1 = document.getElementsByName("age");
+    const residence1 = document.getElementsByName("residence");
+    const technic1 = document.getElementsByName("technic");
+    const career1 = document.getElementsByName("career");
+    const Education1 = document.getElementsByName("Education");
     for(let i=0; i<gender1.length; i++) {
         if(gender1[i].checked) {
             const filtered = people1.filter(person => person['gender'] === gender1[i].value);
