@@ -32,7 +32,9 @@ function createHTMLString(person) {
 }
 
 // 조건 선택 검색 함수
+
 function search_cond(){
+    people1 = people2;
     const gender1 = document.getElementsByName("gender");
     const age1 = document.getElementsByName("age");
     const residence1 = document.getElementsByName("residence");
@@ -41,22 +43,55 @@ function search_cond(){
     const Education1 = document.getElementsByName("Education");
     for(let i=0; i<gender1.length; i++) {
         if(gender1[i].checked) {
-            const filtered = people1.filter(person => person['gender'] === gender1[i].value);
-            displayItems(filtered);
-        }
-        
+            people1 = people1.filter(person => person['gender'] === gender1[i].value);
+        }    
     }
-    
-    //displayItems(filtered);
+    for(let i=0; i<residence1.length; i++) {
+        if(residence1[i].checked) {
+            people1 = people1.filter(person => person['residence'] === residence1[i].value);
+        }    
+    }
+    for(let i=0; i<career1.length; i++) {
+        if(career1[i].checked) {
+            people1 = people1.filter(person => person['career'] === career1[i].value);
+        }    
+    }
+    for(let i=0; i<Education1.length; i++) {
+        if(Education1[i].checked) {
+            people1 = people1.filter(person => person['Education'] === Education1[i].value);
+        }    
+    }
+    for(let i=0; i<technic1.length; i++) {
+        if(technic1[i].checked) {
+            people1 = people1.filter(person => 
+                person['technic1'] === technic1[i].value || 
+                person['technic2'] === technic1[i].value || 
+                person['technic3'] === technic1[i].value);
+        }    
+    }
+    for(let i=0; i<age1.length; i++) {
+        if(age1[i].checked) {
+            num = age1[i].value;
+            num1 = Number(num);
+            num1 = num1 + 10;
+            people1 = people1.filter(person => person['age'] >= age1[i].value && person['age'] < num1);
+        }    
+    }
+    console.log(people1);
+    displayItems(people1);   
 }
 
 // main 동작
+let num1;
+let num;
+let people2 = [];
 let people1 = [];
 loadItems()
     .then(people => {
         console.log(people);
         displayItems(people);
-        test = people;
+        people1 = people;
+        people2 = people;
 })
 .catch(console.log);
 
